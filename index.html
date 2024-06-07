@@ -1,70 +1,130 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Banco de Dados Estático em HTML</title>
+    <title>Banco Do Norte - Sua confiança financeira</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
-        table {
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #004d99;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #003366;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .hero {
+            background: url('banco-hero.jpg') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 1.2em;
+        }
+        .container {
+            padding: 20px;
+        }
+        .services, .about, .contact {
+            margin-bottom: 20px;
+        }
+        .services h2, .about h2, .contact h2 {
+            color: #004d99;
+        }
+        .services ul {
+            list-style: none;
+            padding: 0;
+        }
+        .services ul li {
+            background: #e7e7e7;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #004d99;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
             width: 100%;
-            border-collapse: collapse;
-        }
-        th, td {
-            border: 1px solid black;
-            padding: 8px;
-            text-align: left;
-        }
-        th {
-            background-color: #f2f2f2;
         }
     </style>
 </head>
 <body>
-
-<h1>Banco de Dados Estático em HTML</h1>
-
-<table>
-    <thead>
-        <tr>
-            <th>ID</th>
-            <th>Nome</th>
-            <th>Email</th>
-            <th>Telefone</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>1</td>
-            <td>Ana Silva</td>
-            <td>ana.silva@gmail.com</td>
-            <td>(11) 99999-9999</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>Bruno Costa</td>
-            <td>bruno.costa@gmail.com</td>
-            <td>(21) 98888-8888</td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>Carla Souza</td>
-            <td>carla.souza@gmail.com</td>
-            <td>(31) 97777-7777</td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td>Daniel Lima</td>
-            <td>daniel.lima@gmail.com</td>
-            <td>(41) 96666-6666</td>
-        </tr>
-        <tr>
-            <td>5</td>
-            <td>Elisa Mendes</td>
-            <td>elisa.mendes@gmail.com</td>
-            <td>(51) 95555-5555</td>
-        </tr>
-    </tbody>
-</table>
-
+    <header>
+        <h1>Banco Exemplo</h1>
+        <p>Sua confiança financeira</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Início</a></li>
+            <li><a href="#services">Serviços</a></li>
+            <li><a href="#about">Sobre Nós</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+    </nav>
+    <section class="hero" id="home">
+        <div>
+            <h1>Bem-vindo ao Banco Exemplo</h1>
+            <p>Seu parceiro para um futuro financeiro seguro</p>
+        </div>
+    </section>
+    <div class="container">
+        <section class="services" id="services">
+            <h2>Nossos Serviços</h2>
+            <ul>
+                <li>Conta Corrente</li>
+                <li>Conta Poupança</li>
+                <li>Empréstimos Pessoais</li>
+                <li>Financiamento Imobiliário</li>
+                <li>Investimentos</li>
+                <li>Cartões de Crédito</li>
+            </ul>
+        </section>
+        <section class="about" id="about">
+            <h2>Sobre Nós</h2>
+            <p>O Banco Exemplo foi fundado com a missão de fornecer soluções financeiras acessíveis e confiáveis para todos os nossos clientes. Com anos de experiência no mercado, estamos aqui para ajudar você a alcançar seus objetivos financeiros.</p>
+        </section>
+        <section class="contact" id="contact">
+            <h2>Contato</h2>
+            <p>Email: contato@bancoexemplo.com</p>
+            <p>Telefone: (11) 1234-5678</p>
+            <p>Endereço: Rua Exemplo, 123, São Paulo, SP</p>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Banco Exemplo. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
